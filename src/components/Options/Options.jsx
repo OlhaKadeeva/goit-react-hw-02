@@ -1,6 +1,7 @@
+import css from "./Options.module.css"
 const Options = ({ onLeaveFeedback, onReset, total }) => {
   return (
-    <div>
+    <div className={css.buttons}>
       <button onClick={() => onLeaveFeedback("good")}>Good</button>
       <button onClick={() => onLeaveFeedback("neutral")}>Neutral</button>
       <button onClick={() => onLeaveFeedback("bad")}>Bad</button>
