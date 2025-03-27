@@ -1,4 +1,4 @@
-import css from "./Options.module.css"
+import css from "./Options.module.css";
 const Options = ({ onLeaveFeedback, onReset, total }) => {
   return (
     <div className={css.buttons}>
@@ -9,4 +9,5 @@ const Options = ({ onLeaveFeedback, onReset, total }) => {
     </div>
   );
 };
+
 export default Options;
