@@ -3,6 +3,7 @@ import "./App.css";
 import Description from "./components/Description/Description";
 import Options from "./components/Options/Options";
 import Feedback from "./components/Feedback/Feedback";
+import Notification from "./components/Notification/Notification";
 
 function App() {
   const [feedback, setFeedback] = useState(() => {
@@ -50,7 +51,7 @@ function App() {
           positivePercentage={positiveFeedback}
         />
       ) : (
-        <p>No feedback given yet.</p>
+        <Notification />
       )}
     </>
   );
